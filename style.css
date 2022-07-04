@@ -73,6 +73,11 @@ ul {
     color: #e2e8f0;
 }
 
+.content__navbar li a:hover {
+    color: #00b7d4;
+    font-size: 20px;
+}
+
 .logo {
     display: flex;
     justify-content: center;
@@ -150,6 +155,11 @@ ul {
 .main__imagenes div {
     display: flex;
     justify-content: center;
+    transition: transform 0.3s;
+}
+
+.main__imagenes div:hover {
+    transform: translateY(-15px);
 }
 
 .footer {
@@ -312,10 +322,21 @@ ul {
 
 }
 
-.main__imagenes__servicios {
+.main__imagenes__servicios  {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 50px;
+}
+
+.main__imagenes__servicios div {
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.main__imagenes__servicios div:hover{
+    background-color:rgba(135, 135, 135, 0.716) ;
+    transform: translateY(15px);
 }
 
 .servicios__div {
