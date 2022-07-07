@@ -89,6 +89,25 @@ ul {
     align-content: center;
 }
 
+.logo-nav-bs {
+    width: 50%;
+    
+}
+
+.bg-nav {
+    background-color: rgb(16, 12, 49);  
+    
+}
+
+/* .bg-nav li a {
+    color: white;
+} */
+
+.bg-nav a:hover {
+    color: lightblue;
+}
+
+
 .searchbox {
     margin-top: 30px;
     justify-content: center;
@@ -132,16 +151,25 @@ ul {
     /* justify-content: space-around;  */
 }
 
-.main__imagenes {
+.margin-index {
+    margin-bottom: 200px;
+}
+
+/* .main__imagenes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-around;
     align-items: center;
     gap: 50px;
+} */
 
-    
-    
-}  
+.main__imagenes {
+    border-radius: 10px;
+    background-size: 100%;
+    height: 200px;
+    width: 250px;
+     transition: transform 0.3s;
+}
 
 .main__imagenes img {
     background-color: white;
@@ -149,16 +177,16 @@ ul {
     background-size: 100%;
     height: 200px;
     width: 250px;
-    
+   
 }
 
-.main__imagenes div {
+/* .main__imagenes div {
     display: flex;
     justify-content: center;
     transition: transform 0.3s;
-}
+} */
 
-.main__imagenes div:hover {
+.main__imagenes:hover {
     transform: translateY(-15px);
 }
 
@@ -465,16 +493,17 @@ ul {
     }
 
 }
-@media (max-width:850px) {
-    .main__imagenes {
-    grid-template-columns: 1fr;
-    }
 
+@media (max-width:992px) {
     .main__imagenes img {
-        height: 340px;
-        width: 340px;
-    }
+        background-color: white;
+        border-radius: 10px;
+        background-size: 100%;
+        height: 180px;
+        width: 180px;
 }
+
+
 
 @media  (max-width:800px){
     .footer__general {
@@ -483,6 +512,16 @@ ul {
         grid-gap: 30px;
         padding: 35px 0px;
     }
+}
+
+@media (max-width:767px) {
+    .main__imagenes img {
+        background-color: white;
+        border-radius: 10px;
+        background-size: 100%;
+        height: 210px;
+        width: 210px;
+}
 }
 
 @media (max-width:700px) {
@@ -512,6 +551,16 @@ ul {
     
         
     }
+}
+
+@media (max-width:575px) {
+    .main__imagenes img {
+        background-color: white;
+        border-radius: 10px;
+        background-size: 100%;
+        height: 220px;
+        width: 220px;
+}
 }
 
 @media (max-width:500px) {
@@ -592,3 +641,4 @@ ul {
     }
 }
 
+}

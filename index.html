@@ -11,31 +11,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Varela+Round&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/615f295698.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </head>
 
 <body class="position">
-    <header class="header">
-        <div class="logo">
-            <a href="./index.html"><img src="./assets/gtbuilds.PNG" alt="" width="300" class="header__logo"></a>
+
+      <header>
+        <div>
+          <nav class="navbar navbar-expand-lg  bg-nav sticky-top">
+            <div class="container">
+              <a class="navbar-brand text-white mx-2 fs-2 w-25" href="#"><img src="./assets/gtbuilds.PNG" alt="" class="logo-nav-bs"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse flex-lg-row-reverse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                
+                  <a class="nav-link text-white mx-2 fs-4" href="./pages/armatupc.html">Arma tu pc</a>
+                  <a class="nav-link text-white mx-2 fs-4" href="./pages/servicios.html">Servicios</a>
+                  <a class="nav-link text-white mx-2 fs-4" href="./pages/contacto.html">Contacto</a>
+                  <a class="nav-link text-white mx-2 fs-4" href="./pages/preguntas.html">Preguntas frecuentes</a>
+                </div>
+              </div>
+            </div>
+          </nav>
         </div>
-        <div class="header__content">  
-        <nav>
-            <ul class="content__navbar" >
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/armatupc.html">Armá tu pc</a></li>
-                <li><a href="./pages/servicios.html">Servicios</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a href="./pages/preguntas.html">Preguntas frecuentes</a></li>
-            </ul>
-        </nav>
-        
-        
-     </div>  
-     <div class="searchbox">
-        <input type="text" id="searchterm" placeholder="Buscar producto..." class="searchbox__escribir" />
-        <button type="button" id="search">Buscar</button>
-    </div>
-    </header>
+      </header>
     
    
     <main class="main_index">
@@ -46,7 +49,7 @@
       <section class="main__patrocinadores">
         <h2 class="main__patrocinadores__texto">PATROCINADORES</h2> 
       
-        <div class="main_imagenes__contenedor">
+        <!-- <div class="main_imagenes__contenedor">
             <div class="main__imagenes">
                 <div>
                     <img src="./assets/amd.jpg" alt="" width="200"></td>
@@ -76,7 +79,40 @@
                     <img src="./assets/asrock.jpg" alt="" width="200"></td>
                 </div>
             </div>
-       </div>
+       </div> -->
+
+
+       <div class="container g-5 margin-index">
+        <div class="row g-5">
+            <div class="col-xs-12 col-sm-6 col-md-4 main__imagenes text-center ">
+                <img src="./assets/amd.jpg" alt="" width="200"></td>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 main__imagenes text-center ">   
+                <img src="./assets/intel.jpg" alt="" width="200"></td>
+            </div> 
+            <div class="col-xs-12 col-sm-6 col-md-4 main__imagenes text-center text-center ">
+                <img src="./assets/nvidia.jpg" alt="" width="200"></td>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4  main__imagenes text-center">
+                <img src="./assets/logitech.png" alt="" width="200"></td>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 main__imagenes text-center ">
+                <img src="./assets/hyperx.png" alt="" width="200"></td>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 main__imagenes  text-center">
+                <img src="./assets/redragon.png" alt="" width="210"></td>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 main__imagenes  text-center">
+                <img src="./assets/adata.jpg" alt="" width="200"></td>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 main__imagenes  text-center">
+                <img src="./assets/coolermaster.jpg" alt="" width="200"></td>
+            </div>
+            <div class=" col-xs-12 col-sm-6 col-md-4 main__imagenes  text-center">
+                <img src="./assets/asrock.jpg" alt="" width="200"></td>
+            </div>
+        </div>
+   </div>
     </section>
     </main>
 
