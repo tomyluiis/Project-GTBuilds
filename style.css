@@ -249,53 +249,42 @@ ul {
 
 }
 
-.main_ram {
-    position: relative;
-    top: 20px; ;
-    left: 400px;
+.main__armatupc__div {
+    transition: transform 0.3s ;
 }
 
-.main_grafica {
-    position: relative;
-    top: 20px;
-    left:755px;
-}
+.main__imagenes__armatupc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
 
-.main_almacenamiento {
-    position: relative;
-    top: 20px;
-    left: 1140px;
-}
-
-.main_linea1 {
-    position: relative;
-    display:flex ;
-    justify-content: space-evenly;
-    top: 100px;
-}
-
-.main_linea2 {
-    position: relative;
-    top: 220px;
     
+    
+}  
+
+.main__imagenes__armatupc img {
+    background-color: white;
+    border-radius: 10px;
+    background-size: 100%;
+    height: 200px;
+    width: 250px;
     
 }
 
-.main_linea3 {
-    position: relative;
-   display: flex ;
-   justify-content: space-evenly;
-   top: 220px;
-}
-
-.main__seleccionar_text {
-    text-align: center;
-    font-size: 40px;
-    position: relative;
+.main__imagenes__armatupc div {
+    display: flex;
     justify-content: center;
-    top: 40px;
-    font-weight: 4000;
-    
+
+}
+
+.main__armatupc__div div {
+  transition: transform 0.3s;
+}
+
+.main__armatupc__div div:hover {
+    transform: translateY(-15px);
 }
 
 /* seccion Servicios */
