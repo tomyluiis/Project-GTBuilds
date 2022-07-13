@@ -1,0 +1,97 @@
+.header {
+    background-color: $bgHeader;
+    color: $fontHeader;
+    padding: 30px 20px;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+
+        &-navbar {
+            display: flex ;
+            /* background-color:rgb(94, 78, 239) ; */
+            padding:  10px;
+            width: auto;
+            justify-content: center;
+            margin-top: 30px;
+            overflow: hidden;
+            font-weight: bold;
+            
+
+            li {
+                margin: 0 51px;
+                transition: transform 0.3s;
+
+                &:active {
+                    transform: scale(0.9)
+                }
+
+                a {
+                    color: #e2e8f0;
+                    
+                   
+                    &:hover {
+                        color: #00b7d4;
+                    }
+                }
+            }
+        }
+
+    }
+
+    &__logo{
+        display: flex;
+    justify-content: center;
+    align-content: center;
+
+    img {
+        justify-content: center;
+        align-content: center;
+    }
+    }
+
+    &__searchbox{
+        margin-top: 30px;
+        justify-content: center;
+        display: flex;
+        height: 33px;
+        border-radius: 50px;
+
+        &-escribir {
+            width: 800px;
+        }
+    }
+    }
+
+
+    @media (max-width:1010px)  {
+        .header__content-navbar {
+            display: flex ;
+            /* background-color:rgb(94, 78, 239) ; */
+            flex-direction: column;
+            align-items: center;
+            font-weight: bold;
+            font-size: 30px;
+            justify-content: center;
+        }
+    
+        .header__content-navbar li {
+           padding: 10px;
+           
+            
+        }
+    }
+
+    @media (max-width:395px){
+        .content__navbar {
+            display: flex ;
+            /* background-color:rgb(94, 78, 239) ; */
+            padding:  10px;
+            width: auto;
+            justify-content: center;
+            margin-top: 30px;
+            overflow: hidden;
+            font-weight: bold;
+            font-size: 13px;
+        }
+    }
