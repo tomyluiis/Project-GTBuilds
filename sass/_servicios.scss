@@ -1,0 +1,76 @@
+
+.main__servicios__text {
+    text-align: center;
+    font-size: 150%;
+    color: rgb(177, 177, 177);
+    margin-top: 50px;
+}
+
+.main_servicios {
+   
+    height: auto;
+    margin-bottom: 100px;
+   
+
+    
+}
+
+.main__contenedor__servicios {
+   display: grid;
+   margin-top: 50px;
+    
+
+}
+
+.main__imagenes__servicios  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.main__imagenes__servicios div {
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.main__imagenes__servicios div:hover{
+    background-color:rgba(135, 135, 135, 0.716) ;
+    transform: translateY(15px);
+}
+
+
+// MIXINS
+@mixin servicios__div($fondo) {
+
+    border-radius: 20px;
+    min-height: 250px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: $fondo;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.servicios__linea1{
+    @include servicios__div(rgba(60, 16, 234, 0.324))
+}
+
+.servicios__linea2{
+    @include servicios__div(rgba(255, 0, 0, 0.331))
+}
+
+.servicios__linea1 img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.servicios__linea2 img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
