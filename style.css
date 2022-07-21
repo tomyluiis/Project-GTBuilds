@@ -210,18 +210,7 @@ ul {
     margin-bottom:10px;
 }
 
-.footer .footer__general .redes a {
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    margin-right: 10px;
-    background-color: rgb(41, 3, 103);
-    text-align: center;
 
-}
 
 .footer .derechos {
     background-color: rgb(25, 2, 62);

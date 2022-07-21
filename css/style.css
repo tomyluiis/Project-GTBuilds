@@ -175,13 +175,14 @@ ul {
     .footer__general-redes a {
       display: inline-block;
       text-decoration: none;
-      width: 45px;
+      width: 130px;
       height: 45px;
       line-height: 45px;
       color: #fff;
-      margin-right: 10px;
-      background-color: #290367;
-      text-align: center; }
+      margin-right: 15px;
+      margin-bottom: 15px;
+      text-align: center;
+      font-weight: bold; }
   .footer__derechos {
     background-color: #19023e;
     padding: 15px 10px;
@@ -196,6 +197,18 @@ ul {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
     padding: 35px 0px; } }
+
+.rs-facebook {
+  background-color: #2279e4; }
+
+.rs-instagram {
+  background-color: #c92d8f; }
+
+.rs-twitter {
+  background-color: #55acee; }
+
+.rs-youtube {
+  background-color: #e12a15; }
 
 .main__servicios__text {
   text-align: center;

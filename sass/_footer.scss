@@ -45,13 +45,14 @@
             a {
                 display: inline-block;
                 text-decoration: none;
-                width: 45px;
+                width: 130px;
                 height: 45px;
                 line-height: 45px;
                 color: #fff;
-                margin-right: 10px;
-                background-color: rgb(41, 3, 103);
+                margin-right: 15px;
+                margin-bottom: 15px;
                 text-align: center; 
+                font-weight: bold;
             }
         }
     } 
@@ -75,4 +76,20 @@
         grid-gap: 30px;
         padding: 35px 0px;
     }
+}
+
+// MAPS  
+
+$redesSociales: (
+    facebook: #2279e4,
+    instagram: #c92d8f,
+    twitter: #55acee,
+    youtube: #e12a15,
+);
+
+@each $nombre, $color in $redesSociales{
+    .rs-#{$nombre}{
+                background-color: $color;
+    }
+    
 }
