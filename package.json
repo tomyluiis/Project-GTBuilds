@@ -1,7 +1,7 @@
 {
   "name": "gtbuilds",
   "version": "1.0.0",
-  "description": "proyecto gtbuilds",
+  "description": "GTBuilds. El sitio perfecto para comprar tu pc armada o personalizarla a tu gusto al menor precio y la mejor calidad.",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
